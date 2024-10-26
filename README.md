@@ -70,9 +70,20 @@ touchscreen:
     x_max: 240
     y_min: 9
     y_max: 320
+touchscreen:
+  platform: cst816
+  id: my_touch
+  update_interval: 50ms
+  calibration:
+    x_min: 0
+    x_max: 240
+    y_min: 0
+    y_max: 320
   transform:
     swap_xy: true
-    mirror_x: false
-    mirror_y: true
+    mirror_x: true
+    mirror_y: false
+
+    
 
 ```
